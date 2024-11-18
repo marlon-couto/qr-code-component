@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --white: #ffffff;
+  --semi-transparent: #0000001a;
+  --slate-300: #d6e2f0;
+  --slate-500: #68778d;
+  --slate-900: #1f3251;
+}
+
+body {
+  background-color: var(--slate-300);
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-size: 15px;
+}
+
+.qr-code {
+  height: 500px;
+  width: 320px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px -3px var(--semi-transparent),
+    0 4px 6px -4px var(--semi-transparent);
+  background-color: var(--white);
+  padding: 1.25em;
+}
+
+.qr-code__image,
+.qr-code__image img {
+  border-radius: 15px;
+}
+
+.qr-code__image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.qr-code__text {
+  text-align: center;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+
+.qr-code__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--slate-900);
+  padding-bottom: 0.75em;
+  padding-top: 0.75em;
+}
+
+.qr-code__subtitle {
+  color: var(--slate-500);
+  font-size: 16px;
+}
